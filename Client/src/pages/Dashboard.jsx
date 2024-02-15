@@ -19,7 +19,9 @@ function Dashboard() {
       <div className="md:w-56">
         <DashSidebar />
       </div>
-      <div>{tab === "profile" && <DashProfile />}</div>
+      <div className="flex justify-center items-center m-auto">
+        {tab === "profile" && <DashProfile />}
+      </div>
     </div>
   );
 }
